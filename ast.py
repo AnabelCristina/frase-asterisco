@@ -3,28 +3,34 @@ frase_copy = frase
 n = 0
 p = 1
 
-
-
 while (p == 1):    
     
     carac = input ("transcrever para * ou x?\n") 
 
-    if (carac == "*" or carac == "x"):
-        p = -44
+    if (carac == "*"):
+    	p = 0
+    	
+    elif (carac == "x"):
+        p = 0
+        carac = '×'
         
     else:
-        print("entrada nao valida")
+        print("entrada invalida, digite apenas x ou *")
         p = 1
         
-if (p == -44):
-    while (n < len(frase)):
-        if (frase[n] != ' '):
-            frase_copy = frase_copy.replace(frase[n], carac)
-        n = n + 1
-
-    print (frase_copy)
     
+for letra in frase:
+   	
+    if (letra == ' ' or letra == '?' or letra == '!' or letra == ',' or letra == '.' or letra == ";" or letra == ":"):
+        continue
+      
+    else:
+        frase_copy = frase_copy.replace(letra, carac)
+    
+    n = n + 1
 
+print (frase_copy)
+    
 
     
     

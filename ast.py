@@ -16,14 +16,15 @@ while (p == 1):
         print("entrada nao valida")
         p = 1
         
-while (p == -44):
+if (p == -44):
     while (n < len(frase)):
         if (frase[n] != ' '):
             frase_copy = frase_copy.replace(frase[n], carac)
         n = n + 1
 
     print (frase_copy)
-    p = 2
+    
+
 
     
     

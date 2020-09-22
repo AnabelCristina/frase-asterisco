@@ -1,6 +1,5 @@
 frase = input ("escreva a frase a ser transcrita \n")
 frase_copy = frase
-n = 0
 p = 1
 
 while (p == 1):    
@@ -26,8 +25,6 @@ for letra in frase:
       
     else:
         frase_copy = frase_copy.replace(letra, carac)
-    
-    n = n + 1
 
 print (frase_copy)
     
